@@ -61,7 +61,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I63-Mq-4cO">
                                 <rect key="frame" x="133" y="629" width="108" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="History"/>
                                 <connections>
                                     <segue destination="bhE-kS-EVa" kind="modal" identifier="viewHistory" id="HLO-GB-hQ7"/>
                                 </connections>

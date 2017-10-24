@@ -8,6 +8,6 @@
 
 import UIKit
 
-class HistoryViewController {
+class HistoryViewController: UIViewController {
     
 }
