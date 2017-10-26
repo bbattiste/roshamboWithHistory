@@ -1,3 +1,4 @@
 # Ignore those pesky DS_Store files!
 .DS_Store
 RockPaperScissors.xcodeproj/project.xcworkspace/xcuserdata/BryansAppleAir.xcuserdatad/UserInterfaceState.xcuserstate
+RockPaperScissors.xcodeproj/xcuserdata/BryansAppleAir.xcuserdatad/xcdebugger/
