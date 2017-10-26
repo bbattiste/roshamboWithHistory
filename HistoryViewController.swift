@@ -8,19 +8,24 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HistoryViewController: UIViewController //UITableViewDataSource, UITableViewDelegate 
+{
     
-    let historyArray = RockPaperScissorsViewController.giveHistory
-    
-    func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
-        return historyArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell")!
-        let //ARRAYName = self.ARRAYSOURCE[(indexPath as NSIndexPath).row]
-        
-        // Set the name and image
-        //cell.textLabel?.text = villain.name
-
+//    var historyArray: [RPSMatch]!
+//    
+//    func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
+//        print(historyArray)
+//        print(historyArray.count)
+//        return historyArray.count
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell")!
+//        let match = self.historyArray[(indexPath as NSIndexPath).row]
+//    
+//        // Set the name and image
+////        cell.textLabel?.text = villain.name
+//        
+//        return cell
+//    }
 }
