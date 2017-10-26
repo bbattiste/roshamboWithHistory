@@ -19,6 +19,10 @@ class RockPaperScissorsViewController: UIViewController {
     // Here is the history array which will hold the results of each match that is played in a session.
     var history = [RPSMatch]()
     
+    func giveHistory() -> [RPSMatch] {
+        return history
+    }
+    
     // MARK: Outlets
     
     @IBOutlet weak var rockButton: UIButton!
@@ -60,6 +64,8 @@ class RockPaperScissorsViewController: UIViewController {
         
         // Here we add a match to the history array. 
         history.append(match)
+        
+        print(giveHistory())
         
         //Here are the 3 ways of presenting a View Controller
         
