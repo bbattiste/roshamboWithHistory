@@ -52,7 +52,7 @@ class ResultViewController: UIViewController {
         // Handle the tie
         if match.p1 == match.p2 {
             return "It's a tie!"
-        }
+    }
         
         // Here we build up the results message "RockCrushesScissors. You Win!" etc.
         return match.winner.description + " " + victoryModeString(match.winner) + " " + match.loser.description + ". " + resultString(match)
