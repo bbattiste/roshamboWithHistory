@@ -22,10 +22,31 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell")!
         let match = self.history[(indexPath as NSIndexPath).row]
     
-        // Set the name and image
+        // Set the text, detals, and image
         cell.textLabel?.text = match.p1.description + " vs " + match.p2.description
         cell.detailTextLabel!.text = messageForMatch(match)
+        cell.imageView?.image = UIImage(named: imageForMatch(match))
+        
         return cell
+    }
+    
+    func imageForMatch(_ match: RPSMatch) -> String {
+        
+        var name = ""
+        
+        switch (match.winner) {
+        case .rock:
+            name = "RockCrushesScissors"
+        case .paper:
+            name = "PaperCoversRock"
+        case .scissors:
+            name = "ScissorsCutPaper"
+        }
+        
+        if match.p1 == match.p2 {
+            name = "itsATie"
+        }
+        return name
     }
     
     func messageForMatch(_ match: RPSMatch) -> String {
@@ -36,6 +57,10 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         } else {
             return match.p1.defeats(match.p2) ? "Won" : "Loss"
         }
+    }
+    
+    @IBAction func goBackButtonPressed(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
         
 }
